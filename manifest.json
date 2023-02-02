@@ -1,7 +1,23 @@
 {
     "name": "Streeteasy helper",
     "version": "1.0",
+    "manifest_version": 3,
     "description": "Helps you find additional information about houses listed on Streeteasy",
-    
-
+    "icons": {
+        "128": "icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "128": "icon128.png"
+        },
+        "default_title": "Streeteasy helper",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "https://streeteasy.com/"
+    ]
 }
